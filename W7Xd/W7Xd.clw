@@ -28,6 +28,8 @@ Type=0
 HeaderFile=W7XdDlg.h
 ImplementationFile=W7XdDlg.cpp
 Filter=D
+BaseClass=CDialog
+VirtualFilter=dWC
 
 [CLS:CAboutDlg]
 Type=0
@@ -50,5 +52,5 @@ Class=CW7XdDlg
 ControlCount=3
 Control1=IDOK,button,1342242817
 Control2=IDCANCEL,button,1342242816
-Control3=IDC_STATIC,static,1342308352
+Control3=IDC_BUTTON1,button,1342242816
 

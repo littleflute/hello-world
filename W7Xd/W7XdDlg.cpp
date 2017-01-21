@@ -82,6 +82,7 @@ BEGIN_MESSAGE_MAP(CW7XdDlg, CDialog)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
+	ON_BN_CLICKED(IDC_BUTTON1, OnButton1)
 	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
 
@@ -167,4 +168,11 @@ void CW7XdDlg::OnPaint()
 HCURSOR CW7XdDlg::OnQueryDragIcon()
 {
 	return (HCURSOR) m_hIcon;
+}
+
+void CW7XdDlg::OnButton1() 
+{
+	// TODO: Add your control notification handler code here
+
+	
 }
