@@ -118,6 +118,10 @@ LRESULT CALLBACK WndProc (HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
           hdc = BeginPaint (hwnd, &ps) ;
           SetBkMode (hdc, TRANSPARENT) ;
           TextOut (hdc, 2 * cxChar, cyChar, szTop, lstrlen (szTop)) ;
+		  
+			    TextOut (hdc, 2 * cxChar, 3 * cyChar, szTitleName, lstrlen (szTitleName)) ;
+				
+			    TextOut (hdc, 2 * cxChar, 4 * cyChar, szFileName, lstrlen (szFileName)) ;
           EndPaint (hwnd, &ps) ;
      return 0 ;  
      case WM_DRAWITEM :
@@ -135,10 +139,8 @@ LRESULT CALLBACK WndProc (HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 			}
 		    else 
 			{
-		    	hdc=GetDC(hwnd);
-			    TextOut (hdc, 2 * cxChar, 3 * cyChar, szTitleName, lstrlen (szTitleName)) ;
-				
-			    TextOut (hdc, 2 * cxChar, 6 * cyChar, szFileName, lstrlen (szFileName)) ; 
+		    	InvalidateRect (hwnd, &rect, TRUE) ;
+
 				EnableWindow (GetDlgItem(hwnd,0), FALSE);
 			    EnableWindow (GetDlgItem(hwnd,1), TRUE);
 		     	EnableWindow (GetDlgItem(hwnd,2), TRUE);
