@@ -2,22 +2,24 @@
 
 [General Info]
 Version=1
-LastClass=CAboutDlg
+LastClass=CDlgDemo
 LastTemplate=CDialog
 NewFileInclude1=#include "stdafx.h"
 NewFileInclude2=#include "GdiPlusDemo.h"
 LastPage=0
 
-ClassCount=9
+ClassCount=6
 Class1=CGdiPlusDemoApp
 Class2=CGdiPlusDemoDoc
 Class3=CGdiPlusDemoView
 Class4=CMainFrame
-Class9=CAboutDlg
 
-ResourceCount=2
-Resource1=IDR_MAINFRAME
-Resource2=IDD_ABOUTBOX
+ResourceCount=3
+Resource1=IDD_ABOUTBOX
+Resource2=IDR_MAINFRAME
+Class5=CAboutDlg
+Class6=CDlgDemo
+Resource3=IDD_DIALOG1
 
 [CLS:CGdiPlusDemoApp]
 Type=0
@@ -38,6 +40,9 @@ Type=0
 HeaderFile=GdiPlusDemoView.h
 ImplementationFile=GdiPlusDemoView.cpp
 Filter=C
+BaseClass=CView
+VirtualFilter=VWC
+LastObject=CGdiPlusDemoView
 
 
 [CLS:CMainFrame]
@@ -54,6 +59,7 @@ Type=0
 HeaderFile=GdiPlusDemo.cpp
 ImplementationFile=GdiPlusDemo.cpp
 Filter=D
+LastObject=CAboutDlg
 
 [DLG:IDD_ABOUTBOX]
 Type=1
@@ -115,5 +121,24 @@ Command5=ID_EDIT_COPY
 Command6=ID_EDIT_PASTE
 Command7=ID_FILE_PRINT
 Command8=ID_APP_ABOUT
-CommandCount=8
+Command9=ID_GDIPLUS_DEMO
+CommandCount=9
+
+[DLG:IDD_DIALOG1]
+Type=1
+Class=CDlgDemo
+ControlCount=4
+Control1=IDOK,button,1342242817
+Control2=IDCANCEL,button,1342242816
+Control3=IDC_TREE1,SysTreeView32,1350631463
+Control4=IDC_BUTTON1,button,1342242816
+
+[CLS:CDlgDemo]
+Type=0
+HeaderFile=DlgDemo.h
+ImplementationFile=DlgDemo.cpp
+BaseClass=CDialog
+Filter=D
+LastObject=CDlgDemo
+VirtualFilter=dWC
 

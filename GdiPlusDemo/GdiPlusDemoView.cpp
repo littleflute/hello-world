@@ -20,8 +20,7 @@ IMPLEMENT_DYNCREATE(CGdiPlusDemoView, CView)
 
 BEGIN_MESSAGE_MAP(CGdiPlusDemoView, CView)
 	//{{AFX_MSG_MAP(CGdiPlusDemoView)
-		// NOTE - the ClassWizard will add and remove mapping macros here.
-		//    DO NOT EDIT what you see in these blocks of generated code!
+	ON_COMMAND(ID_GDIPLUS_DEMO, OnGdiplusDemo)
 	//}}AFX_MSG_MAP
 	// Standard printing commands
 	ON_COMMAND(ID_FILE_PRINT, CView::OnFilePrint)
@@ -114,3 +113,15 @@ CGdiPlusDemoDoc* CGdiPlusDemoView::GetDocument() // non-debug version is inline
 
 /////////////////////////////////////////////////////////////////////////////
 // CGdiPlusDemoView message handlers
+#include "DlgDemo.h"
+void CGdiPlusDemoView::OnGdiplusDemo() 
+{
+	// TODO: Add your command handler code here
+	
+	CDlgDemo dlg;
+	if (IDOK==dlg.DoModal())
+	{
+		Invalidate();
+	}
+	
+}

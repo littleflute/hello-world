@@ -6,44 +6,6 @@
 --------------------Configuration: GdiPlusDemo - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating command line "rc.exe /l 0x409 /fo"Debug/GdiPlusDemo.res" /d "_DEBUG" "E:\XD\GITHUB\TRUNK\GdiPlusDemo\GdiPlusDemo.rc"" 
-Creating temporary file "C:\Users\Dell\AppData\Local\Temp\RSP4CBA.tmp" with contents
-[
-/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/GdiPlusDemo.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
-"E:\XD\GITHUB\TRUNK\GdiPlusDemo\GdiPlusDemo.cpp"
-"E:\XD\GITHUB\TRUNK\GdiPlusDemo\GdiPlusDemoDoc.cpp"
-"E:\XD\GITHUB\TRUNK\GdiPlusDemo\GdiPlusDemoView.cpp"
-"E:\XD\GITHUB\TRUNK\GdiPlusDemo\MainFrm.cpp"
-]
-Creating command line "cl.exe @C:\Users\Dell\AppData\Local\Temp\RSP4CBA.tmp" 
-Creating temporary file "C:\Users\Dell\AppData\Local\Temp\RSP4CBB.tmp" with contents
-[
-/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/GdiPlusDemo.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
-"E:\XD\GITHUB\TRUNK\GdiPlusDemo\StdAfx.cpp"
-]
-Creating command line "cl.exe @C:\Users\Dell\AppData\Local\Temp\RSP4CBB.tmp" 
-Creating temporary file "C:\Users\Dell\AppData\Local\Temp\RSP4CCC.tmp" with contents
-[
-/nologo /subsystem:windows /incremental:yes /pdb:"Debug/GdiPlusDemo.pdb" /debug /machine:I386 /out:"Debug/GdiPlusDemo.exe" /pdbtype:sept 
-.\Debug\GdiPlusDemo.obj
-.\Debug\GdiPlusDemoDoc.obj
-.\Debug\GdiPlusDemoView.obj
-.\Debug\MainFrm.obj
-.\Debug\StdAfx.obj
-.\Debug\GdiPlusDemo.res
-]
-Creating command line "link.exe @C:\Users\Dell\AppData\Local\Temp\RSP4CCC.tmp"
-<h3>Output Window</h3>
-Compiling resources...
-Compiling...
-StdAfx.cpp
-Compiling...
-GdiPlusDemo.cpp
-GdiPlusDemoDoc.cpp
-GdiPlusDemoView.cpp
-MainFrm.cpp
-Generating Code...
-Linking...
 
 
 
