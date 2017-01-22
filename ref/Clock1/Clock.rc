@@ -1,0 +1,289 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Clock.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\desk.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\clock1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Clock"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Clock 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2011",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_CLOCK_DIALOG DIALOGEX 0, 0, 231, 239
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Clock"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    LTEXT           "QQ:653865606          欢迎来到MFC--孤魂的世界",
+                    IDC_STATIC,23,7,185,9
+    PUSHBUTTON      "设置闹钟时间",IDC_BUT_SET_CLOCKTIME,172,80,54,16
+    PUSHBUTTON      "开启整点报时",IDC_BUT_OPEN_TELLTIME,172,105,53,17
+    PUSHBUTTON      "设置定时关机",IDC_BUT_OFF_COMPUTER,172,165,53,18
+    LTEXT           "实用闹钟，温馨提示：                              1、您需要打开次软件，关闭此软件闹钟功能将失效。   2、您需要打开音响或佩戴耳机，以便听到铃声。       3、闹钟以及您电脑时间为准，请先校对好本机时间。     ",
+                    IDC_STATIC,10,198,202,34
+    LTEXT           "",IDC_SHOW_TIME,35,24,180,10
+    CONTROL         "List1",IDC_LIST_SHOWCLOCK,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,10,54,154,80
+    CONTROL         "List2",IDC_LIST_SHOWOFFCOM,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,10,134,154,59
+    LTEXT           "以下是设置的闹钟时间和关机时间:（可在此开启和删除）",
+                    IDC_STATIC,10,41,205,8
+    PUSHBUTTON      "删除闹钟定时",IDC_BUT_DELETEITEM,172,54,53,16
+    PUSHBUTTON      "删除关机定时",IDC_BUT_DEL_ITEM,172,135,52,18
+    PUSHBUTTON      "",IDC_BUT_UPDATA,171,55,45,12,NOT WS_VISIBLE
+    PUSHBUTTON      "",IDC_BUT_UPDATA_COM,177,138,29,10,NOT WS_VISIBLE
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 201, 119
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+    LTEXT           "闹钟时间:",IDC_STATIC,16,30,36,8
+    LTEXT           "铃声类型:",IDC_STATIC,17,47,36,8
+    LTEXT           "提示文字:",IDC_STATIC,16,66,36,8
+    COMBOBOX        IDC_COM_SEL_HOUR,57,30,22,121,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "时",IDC_STATIC,84,30,9,8
+    COMBOBOX        IDC_COM_SEL_MINUTE,97,30,22,222,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "分",IDC_STATIC,123,30,9,8
+    COMBOBOX        IDC_COM_SEL_MUSIC,57,46,63,30,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "浏览",IDC_BUT_FIND,122,46,22,11
+    PUSHBUTTON      "试听",IDC_BUT_TRYLISTEN,147,46,20,11
+    PUSHBUTTON      "停止",IDC_BUT_STOPMUSIC,170,46,18,11
+    EDITTEXT        IDC_EDIT_TELLWORD,57,65,130,12,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,56,77,72,18
+    COMBOBOX        IDC_COM_SEL_DATA,144,79,27,45,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "添加",IDC_BUT_ADDTIME,145,96,26,11
+    LTEXT           "可在此添加闹钟时间(输完按添加键即可保存):",IDC_STATIC,
+                    17,16,160,8
+    CONTROL         "一次",IDC_RADIO_ONE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,59,83,31,8
+    CONTROL         "一直",IDC_RADIO_ALL,"Button",BS_AUTORADIOBUTTON,98,83,
+                    24,8
+    LTEXT           "重复设置:",IDC_STATIC,16,83,36,8
+END
+
+IDD_DIALOG2 DIALOG DISCARDABLE  0, 0, 164, 92
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+    LTEXT           "请再次输入关机时间及其提示文字:",IDC_STATIC,14,13,123,8
+    LTEXT           "关机时间:",IDC_STATIC,14,24,38,8
+    COMBOBOX        IDC_COM_SEL_HOUR,52,23,22,102,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "时",IDC_STATIC,76,24,10,8
+    COMBOBOX        IDC_COM_SEL_MINUTE,86,22,22,191,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "分",IDC_STATIC,112,24,10,8
+    COMBOBOX        IDC_COM_SEL_SECOND,124,22,20,189,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "秒",IDC_STATIC,144,23,13,8
+    LTEXT           "提示文字:",IDC_STATIC,14,40,34,8
+    EDITTEXT        IDC_EDIT_TELL_WORD,53,39,98,12,ES_AUTOHSCROLL
+    LTEXT           "重复设置:",IDC_STATIC,14,55,37,8
+    GROUPBOX        "",IDC_STATIC,53,52,71,16
+    CONTROL         "一日",IDC_RADIO_ONE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,58,57,24,8
+    CONTROL         "每日",IDC_RADIO_ALL,"Button",BS_AUTORADIOBUTTON,93,57,
+                    25,8
+    PUSHBUTTON      "添加",IDC_BUT_ADD_OFFTIME,119,70,26,12
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Clock Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Clock\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2011\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Clock.EXE\0"
+            VALUE "ProductName", "Clock 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 194
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 157
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Clock(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Clock.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
