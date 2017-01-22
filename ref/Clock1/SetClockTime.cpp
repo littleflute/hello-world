@@ -79,7 +79,7 @@ void CSetClockTime::OnButFind()
  	CString str;
   
   	CFileDialog dlg(true,NULL,NULL,OFN_HIDEREADONLY | OFN_OVERWRITEPROMPT,
-  					"WAV文件(*.wav)|*.wav| MP3文件(*.mp3)|*.mp3||");//打开WAV文件 
+  					"WAV(*.wav)|*.wav| MP3(*.mp3)|*.mp3||");//Open wave file
  	if(dlg.DoModal ()==IDOK)
 	{
   		str=dlg.GetPathName ();//得到选择的WAV文件

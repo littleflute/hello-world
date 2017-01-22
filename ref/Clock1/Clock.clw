@@ -21,9 +21,9 @@ Class4=CSetClockTime
 Class5=CSetOffCmpTime
 Class6=CMediaClass
 Resource5=IDD_DIALOG2
-Resource6=IDD_DIALOG1 (Chinese (P.R.C.))
-Resource7=IDD_ABOUTBOX (Chinese (P.R.C.))
-Resource8=IDD_CLOCK_DIALOG (Chinese (P.R.C.))
+Resource6=IDD_ABOUTBOX (Chinese (P.R.C.))
+Resource7=IDD_CLOCK_DIALOG (Chinese (P.R.C.))
+Resource8=IDD_DIALOG1 (Chinese (P.R.C.))
 Resource9=IDD_DIALOG2 (Chinese (P.R.C.))
 
 [CLS:CClockApp]
