@@ -37,7 +37,7 @@ int APIENTRY WinMain(HINSTANCE hInstance,
  	// TODO: Place code here.
     HWND hwnd;
 	MSG msg;
-	static TCHAR szappname[]=TEXT("聊天工具");
+	static TCHAR szappname[]=TEXT("Clock");
 	WNDCLASS wndclass;
 	wndclass.cbClsExtra=0;
 	wndclass.cbWndExtra=0;
@@ -50,7 +50,7 @@ int APIENTRY WinMain(HINSTANCE hInstance,
 	wndclass.lpszClassName=szappname;
 	wndclass.lpszMenuName=NULL;
 	RegisterClass(&wndclass);
-	hwnd=CreateWindow(szappname,TEXT("闹钟加时间表"),WS_OVERLAPPEDWINDOW,500,100,400,500,
+	hwnd=CreateWindow(szappname,TEXT("ClockWnd"),WS_OVERLAPPEDWINDOW,500,100,400,500,
 		NULL,NULL,hInstance,NULL);
 	ShowWindow(hwnd,iCmdShow);
 	UpdateWindow(hwnd);
@@ -72,7 +72,7 @@ LRESULT CALLBACK wndproc(HWND hwnd,UINT message,WPARAM wParam,LPARAM lParam)
   {
   case WM_CREATE:
 	  {
-		hwndstatic=CreateWindow(TEXT("STATIC"),TEXT("北京时间:"),WS_CHILD|WS_VISIBLE,100,400,160,20,hwnd,(HMENU)1,hInstance,NULL);
+		hwndstatic=CreateWindow(TEXT("STATIC"),TEXT("Time:"),WS_CHILD|WS_VISIBLE,100,400,160,20,hwnd,(HMENU)1,hInstance,NULL);
 		hwndedit=CreateWindow(TEXT("EDIT"),TEXT(""),WS_CHILD|WS_VISIBLE|ES_READONLY,190,400,140,20,hwnd,(HMENU)2,hInstance,NULL);
 		SetTimer(hwnd,0,1000,timer);
 		SetTimer(hwnd,1,1000,yidong);
@@ -176,7 +176,7 @@ Rectangle(hdc,zy[j].x-5,zy[j].y-5,zy[j].x+5,zy[j].y+5);
 if(sys.wSecond==0)
 {
  ++j%=60;
- //PlaySound(TEXT("1/xuanzhuan.wav"),NULL,SND_FILENAME|SND_ASYNC);
+ PlaySound(TEXT("xuanzhuan.wav"),NULL,SND_FILENAME|SND_ASYNC);
 }
 }
 }
