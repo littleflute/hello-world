@@ -6,11 +6,55 @@
 --------------------Configuration: GdiPlusDemo - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
+Creating temporary file "C:\Users\Dell\AppData\Local\Temp\RSPC376.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/GdiPlusDemo.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\XD\GITHUB\TRUNK\GdiPlusDemo\DlgDemo.cpp"
+"E:\XD\GITHUB\TRUNK\GdiPlusDemo\GdiPlusDemo.cpp"
+"E:\XD\GITHUB\TRUNK\GdiPlusDemo\GdiPlusDemoDoc.cpp"
+"E:\XD\GITHUB\TRUNK\GdiPlusDemo\GdiPlusDemoView.cpp"
+"E:\XD\GITHUB\TRUNK\GdiPlusDemo\MainFrm.cpp"
+]
+Creating command line "cl.exe @C:\Users\Dell\AppData\Local\Temp\RSPC376.tmp" 
+Creating temporary file "C:\Users\Dell\AppData\Local\Temp\RSPC386.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/GdiPlusDemo.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\XD\GITHUB\TRUNK\GdiPlusDemo\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Dell\AppData\Local\Temp\RSPC386.tmp" 
+Creating temporary file "C:\Users\Dell\AppData\Local\Temp\RSPC387.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/GdiPlusDemo.pdb" /debug /machine:I386 /out:"Debug/GdiPlusDemo.exe" /pdbtype:sept 
+.\Debug\DlgDemo.obj
+.\Debug\GdiPlusDemo.obj
+.\Debug\GdiPlusDemoDoc.obj
+.\Debug\GdiPlusDemoView.obj
+.\Debug\MainFrm.obj
+.\Debug\StdAfx.obj
+.\Debug\GdiPlusDemo.res
+]
+Creating command line "link.exe @C:\Users\Dell\AppData\Local\Temp\RSPC387.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+DlgDemo.cpp
+GdiPlusDemo.cpp
+GdiPlusDemoDoc.cpp
+GdiPlusDemoView.cpp
+MainFrm.cpp
+Generating Code...
+Linking...
+LINK : fatal error LNK1168: cannot open Debug/GdiPlusDemo.exe for writing
+Error executing link.exe.
+Creating command line "bscmake.exe /nologo /o"Debug/GdiPlusDemo.bsc"  .\Debug\StdAfx.sbr .\Debug\DlgDemo.sbr .\Debug\GdiPlusDemo.sbr .\Debug\GdiPlusDemoDoc.sbr .\Debug\GdiPlusDemoView.sbr .\Debug\MainFrm.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
 
 
 
 <h3>Results</h3>
-GdiPlusDemo.exe - 0 error(s), 0 warning(s)
+GdiPlusDemo.exe - 1 error(s), 0 warning(s)
 </pre>
 </body>
 </html>

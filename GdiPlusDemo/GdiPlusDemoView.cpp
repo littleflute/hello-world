@@ -66,6 +66,7 @@ void CGdiPlusDemoView::OnDraw(CDC* pDC)
 	Graphics gc(pDC->m_hDC);
 	Pen pen(Color::Red, 2);
 	gc.DrawArc(&pen, 10, 10, 300, 200, 0, 360);
+	
  
 
 	g_OnDraw=0;
