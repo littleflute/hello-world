@@ -1462,7 +1462,7 @@ CString GetGdiplusFunsCode(int index1, int index2)
 {
 	CString key=GetGdiplusFunsName(index1, index2);
 	if (key.IsEmpty())
-		return "未找到函数";
+		return "xddubg:: IsEmpty() 未找到函数";
 
 	//假设原代码在 <exePath> ../WalkLtDemo/WalkLtDemo设计实例.cpp
 	TCHAR ModuleDirectory[_MAX_PATH];
@@ -1472,13 +1472,13 @@ CString GetGdiplusFunsCode(int index1, int index2)
 	{
 		*p=0;
 		p=::_tcsrchr(ModuleDirectory, '\\'); *p=0;
-		::_tcscat(ModuleDirectory, "\\WalkLtDemo\\WalkLtDemo设计实例.cpp");
+		::_tcscat(ModuleDirectory, "\\WalkLtDemo\\WalkLtDemoEx.cpp");
 	}
 
 	CString fname=ModuleDirectory;
 	FILE *pf = ::fopen(fname, "rt");
 	if (!pf)
-		return "打开文件失败";
+		return "Can't find file.";
 
 	CString res;
 

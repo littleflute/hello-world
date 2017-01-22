@@ -6,6 +6,46 @@
 --------------------Configuration: WalkLtDemo - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
+Creating temporary file "C:\Users\Dell\AppData\Local\Temp\RSPC330.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "../include" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/WalkLtDemo.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\xd\github\trunk\ref\GdiPlusDemo\WalkLtDemo\WalkLtDemoHelp.cpp"
+]
+Creating command line "cl.exe @C:\Users\Dell\AppData\Local\Temp\RSPC330.tmp" 
+Creating temporary file "C:\Users\Dell\AppData\Local\Temp\RSPC331.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/WalkLtDemo.pdb" /debug /machine:I386 /out:"../Bin/WalkLtDemo.exe" /pdbtype:sept /libpath:"../Lib" 
+.\Debug\GdiplusDemoDlg.obj
+.\Debug\MainFrm.obj
+.\Debug\MyCodeDlg.obj
+.\Debug\StdAfx.obj
+.\Debug\WalkLtDemo.obj
+.\Debug\WalkLtDemoDoc.obj
+.\Debug\WalkLtDemoEx.obj
+.\Debug\WalkLtDemoHelp.obj
+.\Debug\WalkLtDemoView.obj
+.\Debug\WalkLtDemo.res
+]
+Creating command line "link.exe @C:\Users\Dell\AppData\Local\Temp\RSPC331.tmp"
+<h3>Output Window</h3>
+Compiling...
+WalkLtDemoHelp.cpp
+Linking...
+Creating temporary file "C:\Users\Dell\AppData\Local\Temp\RSPC4A9.tmp" with contents
+[
+/nologo /o"Debug/WalkLtDemo.bsc" 
+.\Debug\StdAfx.sbr
+.\Debug\GdiplusDemoDlg.sbr
+.\Debug\MainFrm.sbr
+.\Debug\MyCodeDlg.sbr
+.\Debug\WalkLtDemo.sbr
+.\Debug\WalkLtDemoDoc.sbr
+.\Debug\WalkLtDemoEx.sbr
+.\Debug\WalkLtDemoHelp.sbr
+.\Debug\WalkLtDemoView.sbr]
+Creating command line "bscmake.exe @C:\Users\Dell\AppData\Local\Temp\RSPC4A9.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
 
 
 
